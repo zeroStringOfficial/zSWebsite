@@ -8,8 +8,9 @@
           |- index.html
           |- btc/
               |- index.html
-              |- article1.html
-              |- article2.html
+              |- 1consensus.html
+              |- 2difficultyReward.html
+              |- 3ledgerUtxo.html
           |- eth/
               |- index.html
               |- article1.html
@@ -37,6 +38,7 @@
               |- image2.jpg
               |- image3.jpg
               |- image4.jpg
-          |- 2chain
+          |- 2difficultyReward.html
+	  |- 3ledgerUtxo.html
       |- ethereum-core/
       |- solana-core/
