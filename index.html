@@ -1,7 +1,39 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>test</p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zeroString</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .tile {
+            border: 2px solid black;
+            transition: transform 0.2s;
+        }
+        .tile:hover {
+            transform: scale(1.05);
+        }
+        .arrow {
+            font-size: 2rem;
+            color: blue;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="container mx-auto px-4">
+        <h1 class="text-4xl font-bold mb-8 text-center">zeroString</h1>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="tile p-8 flex items-center justify-center">
+                <a href="core-series.html" class="text-center">Core series</a>
+            </div>
+            <div class="tile p-8 flex items-center justify-center">
+                <a href="how-it-works-series.html" class="text-center">How does it <em>actually</em> work series</a>
+            </div>
+            <div class="tile p-8 flex items-center justify-center relative">
+                <a href="series-3.html" class="text-center">Series #3</a>
+                <div class="absolute right-4 top-1/2 transform -translate-y-1/2 arrow">&gt;</div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
