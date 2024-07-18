@@ -4,13 +4,6 @@ zSWebsite/
 ├── styles.css
 ├── scripts/
 │   └── main.js
-├── images/
-│   └── bitcoin-core/
-│       └── 1consensus/
-│           ├── image1.png
-│           ├── image2.png
-│           ├── image3.png
-│           └── image4.png
 ├── series/
 │   ├── core/
 │   │   ├── index.html
@@ -18,10 +11,11 @@ zSWebsite/
 │   │   │   ├── index.html
 │   │   │   └── 1consensus/
 │   │   │       ├── 1consensus.html
-│   │   │       ├── image1.png
-│   │   │       ├── image2.png
-│   │   │       ├── image3.png
-│   │   │       └── image4.png
+│   │   │       └── images/
+│   │   │           ├── image1.png
+│   │   │           ├── image2.png
+│   │   │           ├── image3.png
+│   │   │           └── image4.png
 │   │   ├── eth/
 │   │   │   └── index.html
 │   │   └── sol/
