@@ -4,6 +4,8 @@ zSWebsite/
 ├── styles.css
 ├── scripts/
 │   └── main.js
+├── images/
+│   └── zsLogo.png
 ├── series/
 │   ├── core/
 │   │   ├── index.html
