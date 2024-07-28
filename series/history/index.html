@@ -3,55 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Not Available</title>
+    <title>History Series</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
     <link rel="icon" href="/images/zsLogo.png" type="image/png">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
-        }
-        .container {
-            text-align: center;
-            padding: 20px;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            color: #666;
-        }
-        .return-button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            font-size: 16px;
-            color: white;
-            background-color: #007BFF;
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
-            cursor: pointer;
-        }
-        .return-button:hover {
-            background-color: #0056b3;
-        }
-    </style>
 </head>
-<body>
-    <div class="container">
-        <h1>Oops! This page isn't available yet.</h1>
-        <p>We're a brand new website with a small team working hard to bring you great content.</p>
-        <p>We'll get back to this page soon. Thanks for your patience!</p>
-        <p>@zeroString_ on X if you need to get in contact!</p>
-        <a href="/" class="return-button">Return to Home</a>
-    </div>
+<body class="flex flex-col min-h-screen bg-gray-100">
+    <header class="bg-gray-100 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold">zeroString</a>
+            <nav>
+                <a href="/series/core/index.html" class="mx-2">Core Series</a>
+                <a href="/series/history/index.html" class="mx-2">History Series</a>
+                <a href="/series/how-it-works/index.html" class="mx-2">How It Works Series</a>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="bg-gray-200 p-2">
+        <div class="container mx-auto">
+            <ol class="list-none p-0 inline-flex">
+                <li class="flex items-center">
+                    <a href="/">Home</a>
+                    <svg class="fill-current w-3 h-3 mx-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg>
+                </li>
+                <li class="flex items-center">
+                    <a href="/series/history/index.html">History Series</a>
+                </li>
+            </ol>
+        </div>
+    </nav>
+
+    <main class="flex-grow">
+        <div class="container mx-auto">
+            <h1 class="text-3xl font-bold p-6">History Series</h1>
+            <div class="p-6">
+                <p>The series ‘Blockchain in Brief’ will aim to concisely cover some essentials in the embryonic stage of crypto, such as David Chaum's laying the technical roots and groundwork for privacy on blockchain technologies. Then, the successes and failures of exploration within this space will mark milestones in the contributive effort of so many towards the vision of decentralised finance. Followed by current and future considerations for decentralised currencies, such as power consumption and quantum concerns.</p>
+
+                <p>‘Blockchain Odyssey’ is a series we aim to release soon that will detail the events and history of crypto more thoroughly. This will parallel the ‘Blockchain in Brief’ series, offering zeroString users a choice between brevity and detail.</p>
+            </div>
+            <div class="p-6">
+                <h2 class="text-2xl font-semibold">Articles</h2>
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <ul class="divide-y divide-gray-200">
+                        <li class="p-4 hover:bg-gray-100">
+                            <a href="/series/history/1bib.html" class="text-blue-500 hover:underline">Private Payments & Early Failures</a>
+                        </li>
+                        <li class="p-4 hover:bg-gray-100">
+                            <a href="/series/history/2bib.html" class="text-blue-500 hover:underline">Breaking the Chains: Overcoming the Challenges of Early Systems</a>
+                        </li>
+                        <li class="p-4 hover:bg-gray-100">
+                            <a href="/series/history/3bib.html" class="text-blue-500 hover:underline">Decentralised Currency Challenges and Beyond</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-100 p-4">
+        <div class="container mx-auto text-center">
+            &copy; 2024 zeroString
+        </div>
+    </footer>
+
+    <script src="/scripts/main.js"></script>
 </body>
 </html>
