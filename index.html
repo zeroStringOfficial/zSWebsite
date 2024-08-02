@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,10 +11,12 @@
             border: 2px solid black;
             transition: transform 0.2s;
             width: 100%;
-            height: 400px;
+            height: 400px; /* Original size */
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            text-decoration: none;
+            color: black;
         }
         .tile-title {
             background-color: white;
@@ -47,18 +50,18 @@
         <div class="container mx-auto px-4">
             <h1 class="text-4xl font-bold mb-8 text-center">zeroString</h1>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
-                <div class="tile">
+                <a href="/series/core/index.html" class="tile">
                     <div class="tile-title">Core Series</div>
                     <div class="tile-description">This section provides in-depth information about the Bitcoin Core and its functionalities.</div>
-                </div>
-                <div class="tile">
+                </a>
+                <a href="/series/how-it-works/index.html" class="tile">
                     <div class="tile-title">How It <em>Actually</em> Works Series</div>
                     <div class="tile-description">Explore the inner workings and mechanics of Bitcoin in this series.</div>
-                </div>
-                <div class="tile">
+                </a>
+                <a href="/series/history/index.html" class="tile">
                     <div class="tile-title">History Series</div>
                     <div class="tile-description">Learn about the history of Bitcoin, from its inception to its present-day status.</div>
-                </div>
+                </a>
             </div>
         </div>
     </div>
