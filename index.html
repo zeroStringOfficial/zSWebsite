@@ -10,13 +10,33 @@
         .tile {
             border: 2px solid black;
             transition: transform 0.2s;
+            width: 100%;
+            height: 300px; /* Reduced height */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-decoration: none;
+            color: black;
+        }
+        .tile-title {
+            background-color: white;
+            font-weight: bold;
+            padding: 1rem;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 2px solid black; /* Horizontal line */
+            height: 50px; /* Ensure it fills the height of the tile */
+        }
+        .tile-description {
+            background-color: white;
+            padding: 1rem;
+            text-align: center;
+            flex: 1;
         }
         .tile:hover {
             transform: scale(1.05);
-        }
-        .arrow {
-            font-size: 2rem;
-            color: blue;
         }
         body {
             display: flex;
@@ -33,15 +53,18 @@
         <div class="container mx-auto px-4">
             <h1 class="text-4xl font-bold mb-8 text-center">zeroString</h1>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
-                <div class="tile p-8 flex items-center justify-center">
-                    <a href="series/core/index.html" class="text-center">Core Series</a>
-                </div>
-                <div class="tile p-8 flex items-center justify-center">
-                    <a href="series/how-it-works/index.html" class="text-center">How It <em>Actually</em> Works Series</a>
-                </div>
-                <div class="tile p-8 flex items-center justify-center relative">
-                    <a href="series/history/index.html" class="text-center">History Series</a>
-                </div>
+                <a href="/series/core/index.html" class="tile">
+                    <div class="tile-title">Core Series</div>
+                    <div class="tile-description">This section provides in-depth information about the Bitcoin Core and its functionalities.</div>
+                </a>
+                <a href="/series/how-it-works/index.html" class="tile">
+                    <div class="tile-title">How It <em>Actually</em> Works Series</div>
+                    <div class="tile-description">Uncover how these technologies actually work without relying on tired oversimplifications or technical jargon. We break down complex crypto protocols and blockchain technologies into clear, comprehensive explanations tailored to all users.</div>
+                </a>
+                <a href="/series/history/index.html" class="tile">
+                    <div class="tile-title">History Series</div>
+                    <div class="tile-description">Learn about the history of Cryptocurrency, from its inception to its present-day status.</div>
+                </a>
             </div>
         </div>
     </div>
