@@ -11,13 +11,12 @@
         .tile {
             border: 2px solid black;
             transition: transform 0.2s;
-            width: 100%;
-            height: 300px; /* Reduced height */
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             text-decoration: none;
             color: black;
+            height: 100%; /* Ensure the tile stretches to fill its container */
         }
         .tile-title {
             background-color: white;
@@ -28,7 +27,6 @@
             align-items: center;
             justify-content: center;
             border-bottom: 2px solid black; /* Horizontal line */
-            height: 50px; /* Ensure it fills the height of the tile */
             word-spacing: 0.1em; /* Add word spacing */
         }
         .tile-description {
@@ -60,7 +58,7 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
                 <a href="/series/core/index.html" class="tile">
                     <div class="tile-title">Core Series</div>
-                    <div class="tile-description">Where we explore the essential workings of the top cryptocurrency projects. Here, you'll find in-depth explanations of foundational blockchain technologies, presented in a way that's both thorough and comprehensible. Our goal is to demystify complex systems without sacrificing crucial detail, offering you an understanding of how these new and groundbreaking technologies truly operate.</div>
+                    <div class="tile-description">Where we explore the essential workings of the top cryptocurrency projects. Here, our goal is to demystify complex systems without sacrificing crucial detail, offering you an understanding of how these new and groundbreaking technologies truly operate.</div>
                 </a>
                 <a href="/series/how-it-works/index.html" class="tile">
                     <div class="tile-title">How It <em>Actually</em> Works Series</div>
