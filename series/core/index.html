@@ -7,39 +7,6 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/styles.css">
     <link rel="icon" href="/images/zsLogo.png" type="image/png">
-    <style>
-        .card {
-            display: inline-block;
-            margin: 20px;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-        .card img {
-            width: 100%;
-            height: auto;
-        }
-        .card-bitcoin img {
-            object-fit: contain;
-            /* Zoom out slightly */
-        }
-        .card-ethereum img {
-            width: 800px;
-            height: auto;
-            object-fit: contain;
-            /* Adjust to fit dimensions 800x549 */
-        }
-        .card-solana img {
-            width: 1980px;
-            height: auto;
-            object-fit: contain;
-            /* Adjust to fit dimensions 1980x384 */
-        }
-        .card-content {
-            margin-top: 20px;
-        }
-    </style>
 </head>
 <body class="flex flex-col min-h-screen bg-gray-100">
     <header class="bg-gray-100 p-4">
@@ -71,33 +38,27 @@
         <div class="container mx-auto">
             <h1 class="text-3xl font-bold p-6">Core Series</h1>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-6">
-                <div class="card card-bitcoin bg-orange-500 text-white rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
-                    <a href="/series/core/btc/index.html">
-                        <img src="/images/chain-logo/btc-logo.png" alt="Bitcoin" class="w-full h-48 object-cover">
-                        <div class="card-content p-4 text-center">
-                            <h2 class="text-2xl font-bold">Bitcoin Core</h2>
-                            <p>Explore the foundation of Bitcoin technology and its blockchain.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="card card-ethereum bg-blue-600 text-white rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
-                    <a href="/series/core/eth/index.html">
-                        <img src="/images/chain-logo/eth-logo.png" alt="Ethereum" class="w-full h-48 object-cover">
-                        <div class="card-content p-4 text-center">
-                            <h2 class="text-2xl font-bold">Ethereum Core</h2>
-                            <p>Discover the Ethereum blockchain and its smart contract capabilities.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="card card-solana bg-purple-700 text-white rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
-                    <a href="/series/core/sol/index.html">
-                        <img src="/images/chain-logo/sol-logo.png" alt="Solana" class="w-full h-48 object-cover">
-                        <div class="card-content p-4 text-center">
-                            <h2 class="text-2xl font-bold">Solana Core</h2>
-                            <p>Dive into the Solana blockchain and its high-performance features.</p>
-                        </div>
-                    </a>
-                </div>
+                <a href="/series/core/btc/index.html" class="bg-orange-500 text-white rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="/images/chain-logo/btc-logo.png" alt="Bitcoin" class="w-full h-48 object-cover">
+                    <div class="p-4 text-center">
+                        <h2 class="text-2xl font-bold">Bitcoin Core</h2>
+                        <p>Explore the foundation of Bitcoin technology and its blockchain.</p>
+                    </div>
+                </a>
+                <a href="/series/core/eth/index.html" class="bg-blue-600 text-white rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="/images/chain-logo/eth-logo.png" alt="Ethereum" class="w-full h-48 object-cover">
+                    <div class="p-4 text-center">
+                        <h2 class="text-2xl font-bold">Ethereum Core</h2>
+                        <p>Discover the Ethereum blockchain and its smart contract capabilities.</p>
+                    </div>
+                </a>
+                <a href="/series/core/sol/index.html" class="bg-purple-700 text-white rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="/images/chain-logo/sol-logo.png" alt="Solana" class="w-full h-48 object-cover">
+                    <div class="p-4 text-center">
+                        <h2 class="text-2xl font-bold">Solana Core</h2>
+                        <p>Dive into the Solana blockchain and its high-performance features.</p>
+                    </div>
+                </a>
             </div>
         </div>
     </main>
