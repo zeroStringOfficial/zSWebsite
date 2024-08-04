@@ -12,6 +12,10 @@
         .zoom-out {
             transform: scale(0.8); /* Adjust the scale as needed */
         }
+        .custom-zoom {
+            object-fit: contain; /* Ensures the entire image is visible */
+            height: auto; /* Adjusts height based on aspect ratio */
+        }
     </style>
 </head>
 
@@ -67,7 +71,7 @@
                 </div>
                 <div class="bg-purple-700 text-white rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
                     <a href="/series/core/sol/index.html">
-                        <img src="/images/chain-logo/sol-logo.png" alt="Solana" class="w-full h-48 object-cover zoom-out">
+                        <img src="/images/chain-logo/sol-logo.png" alt="Solana" class="w-full custom-zoom">
                         <div class="p-4 text-center">
                             <h2 class="text-2xl font-bold">Solana Core</h2>
                             <p>Dive into the Solana blockchain and its high-performance features.</p>
