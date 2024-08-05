@@ -54,6 +54,23 @@
             max-width: 90%;
             max-height: 90%;
         }
+        /* Back to Top Button styles */
+        #back-to-top {
+            display: none;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #000;
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 1000;
+            transition: opacity 0.3s;
+        }
+        #back-to-top:hover {
+            background-color: #444;
+        }
     </style>
 </head>
 <body class="flex flex-col min-h-screen bg-gray-100">
@@ -104,6 +121,9 @@
         </div>
     </main>
 
+    <!-- Back to Top Button -->
+    <button id="back-to-top" onclick="scrollToTop()">Top</button>
+
     <!-- Lightbox structure -->
     <div id="lightbox" class="lightbox">
         <div class="lightbox-content">
@@ -137,6 +157,23 @@
             lightbox.addEventListener('click', function() {
                 lightbox.style.display = 'none';
             });
+        }
+
+        // Back to Top button functionality
+        const backToTopButton = document.getElementById("back-to-top");
+
+        window.addEventListener("scroll", function() {
+            if (window.scrollY > 100) {
+                backToTopButton.style.display = "block";
+                backToTopButton.style.opacity = 1;
+            } else {
+                backToTopButton.style.opacity = 0;
+                backToTopButton.style.display = "none";
+            }
+        });
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
     </script>
 </body>
